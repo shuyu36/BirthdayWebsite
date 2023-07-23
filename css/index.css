@@ -1,0 +1,79 @@
+@import url(resut.css);
+
+section {
+    background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);    
+    height: 100%;
+  justify-content: center;
+}
+
+.banner {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    background-image: url(../img/ribbon.png);
+    background-repeat: no-repeat;
+    height: 100%;
+}
+.indexBalloon {
+    height: 100vh;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.titlehappy {
+  width: 10vw;
+}
+.titlebirthday {
+  width: 50vw;
+}
+.titletoyou {
+  width: 10vw;
+}
+.btn {
+    margin: 5vh 0;
+    color: rgb(255, 255, 255);
+    background-image: linear-gradient(160deg, #735704 , #f3c435); 
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-image: linear-gradient(320deg, #735704 , #f3c435); 
+    color: rgb(255, 255, 255);
+}
+    
+@media screen and (max-width: 414px) {
+    .banner {
+        display: flex;
+        justify-content: center;
+        flex-direction: column-reverse;
+        align-items: center;
+        background-size: cover;
+        height: 100%;
+        background-position-x: 2px;
+        background-position-y: -43px;
+      }
+      .title{
+        margin-top: 30px;
+      }
+
+      .titlehappy {
+        width: 30vw;
+      }
+      .titlebirthday {
+        width: 90vw;
+      }
+      .titletoyou {
+        width: 30vw;
+      }
+
+  .indexBalloon {
+    height: 58vh;
+  }
+}
