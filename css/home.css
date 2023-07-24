@@ -1,16 +1,27 @@
+
 main{
+}
+header {
+    margin: 0 auto;
+  }
+  
+.out{
     position: relative;
+    overflow: hidden;
+    height: 100vh;
+}
+.decorate{
 }
 .ballonWhite1 {
     position: absolute;
-    width: 18vh;
-    left: 10vw;
-    top: 25vw;
+    width: 24vh;
+    left: 4vw;
+    top: 16vw;
   }
   .balloonBlack {
     position: absolute;
-    width: 18vh;
-    top: 58vh;
+    width: 19vh;
+    top: 38vh;
     right: 5vw;
   }
   .ribbon1 {
@@ -21,14 +32,21 @@ main{
     transform: rotate(185deg);
   }
   .ribbon2 {
-    width: 40%;
+    width: 30%;
     position: absolute;
-    top: 60vh;
-    right: -12vw;
-    transform: rotate(37deg);
+    top: -20vh;
+    right: -6vw;
+    transform: rotate(-34deg);
+  }
+  .ribbon3{
+    width: 70%;
+    position: absolute;
+    top: -5vh;
+    left: 60vw;
+    transform: rotate(185deg);
   }
 
-  section{
+  .text{
     width: 60%;
     background-color: #7b2929;
     height: 50%;
@@ -38,5 +56,38 @@ main{
 @media screen and (max-width: 414px){
     section{
         margin-top: 30px;
+    }
+    .balloonBlack{
+        position: absolute;
+    width: 18vh;
+    top: 58vh;
+    right: -9vw;
+    }
+    .ballonWhite1{
+        position: absolute;
+    width: 19vh;
+    left: -11vw;
+    top: 107vw;
+    }
+    .ribbon2{
+        width: 75%;
+        position: absolute;
+        top: 60vh;
+        right: -5vw;
+        transform: rotate(-11deg);
+    }
+    .ribbon1{
+        width: 70%;
+    position: absolute;
+    top: -5vh;
+    left: 60vw;
+    transform: rotate(185deg);
+    }
+    .ribbon3{
+        width: 70%;
+        position: absolute;
+        top: 68vh;
+        left: -37vw;
+        transform: rotate(171deg);
     }
 }

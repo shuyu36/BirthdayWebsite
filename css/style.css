@@ -1,11 +1,11 @@
 @import url(resut.css);
 
 body {
-  background: linear-gradient(-10deg, #d0dcf2 50%, transparent 90%);
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: linear-gradient(-10deg, #d0dcf2 60%, transparent 90%);
+    background-size: cover;
   height: 100vh;
-
+  overflow: hidden;
+  position: relative;
 }
 .logo {
     width: 20%;
@@ -14,20 +14,6 @@ body {
   .container-fluid {
     margin: 0 10%;
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
