@@ -1,0 +1,42 @@
+@import url(resut.css);
+
+body {
+  background: linear-gradient(-10deg, #d0dcf2 50%, transparent 90%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+
+}
+.logo {
+    width: 20%;
+    margin-left: 10px;
+  }
+  .container-fluid {
+    margin: 0 10%;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  @media screen and (max-width: 414px) {
+    .container-fluid {
+      margin: 0;
+    }
+    .logo {
+      width: 60px;
+      margin-left: 10px;
+    }
+}
