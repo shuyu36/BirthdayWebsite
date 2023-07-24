@@ -27,3 +27,16 @@ main{
     right: -12vw;
     transform: rotate(37deg);
   }
+
+  section{
+    width: 60%;
+    background-color: #7b2929;
+    height: 50%;
+    margin: 0 auto;
+  }
+
+@media screen and (max-width: 414px){
+    section{
+        margin-top: 30px;
+    }
+}
