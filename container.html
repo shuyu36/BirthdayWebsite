@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       href="https://fonts.googleapis.com/css?family=Noto+Sans+TC|Open+Sans&display=swap"
       rel="stylesheet"
@@ -13,62 +13,63 @@
       integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="css/container.css" />
     <title>Kuan__HBD</title>
   </head>
-  <header>
-    <div class="container">
-    </div>
-  </header>
   <body>
-    <!-- Button trigger modal -->
-    <button
-      type="button"
-      class="btn btn-primary"
-      data-bs-toggle="modal"
-      data-bs-target="#staticBackdrop"
-    >
-      成熟點！24歲了
-    </button>
-
-    <!-- Modal -->
-    <div
-      class="modal fade"
-      id="staticBackdrop"
-      data-bs-backdrop="static"
-      data-bs-keyboard="false"
-      tabindex="-1"
-      aria-labelledby="staticBackdropLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="staticBackdropLabel">警告</h5>
+ 
+      <header>
+        <div class="decorate">
+          <img src="img/ballonWhite.png" alt="" class="ballonWhite1" />
+          <img src="img/balloonBlack.png" alt="" class="balloonBlack" />
+          <img src="img/ribbon2.png" alt="" class="ribbon1" />
+          <img src="img/ribbon2.png" alt="" class="ribbon2" />
+          <img src="img/ribbon2.png" alt="" class="ribbon3" />
+          <img src="img/ribbon2.png" alt="" class="ribbon4" />
+        </div>   
+        
+      </header>
+      <main>
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <img src="img/beer.svg" alt="" class="logo">
+            </a>          
             <button
+              class="navbar-toggler"
               type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body">由於你不讓我送禮物，那就接受我這個爛切版吧 <br>顆顆</div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary btn-close-white"
-              data-bs-dismiss="modal"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
             >
-              別看了唄
+              <span class="navbar-toggler-icon"></span>
             </button>
-            <a class="btn btn-primary btn-lg" href="index.html" role="button"
-            >真有趣</a
-          >
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <nav class="nav nav-pills nav-justified">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >ABOUT</a
+                >
+                <a class="nav-link" href="home.html">HOME</a>
+                <a class="nav-link" href="story.html">STORY</a>
+              </nav>
+            </div>
           </div>
+        </nav>
+        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+          <strong>注意注意</strong> 說真的 我還沒想到這alert要打什麼：）先關掉吧
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
         </div>
-      </div>
-    </div>
-    <!--bootstrap JS插件-->
-
+        <div>
+          <h1>happy birthday</h1>
+        </div>
+      </main>
+      <!--bootstrap JS插件-->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js"
       integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/"
