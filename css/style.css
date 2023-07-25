@@ -1,12 +1,19 @@
 @import url(resut.css);
 
 body {
-  background: linear-gradient(-10deg, #d0dcf2 70%, transparent 90%);
+  background-image: linear-gradient(-10deg, #d0dcf2 70%, transparent 90%);
     background-size: cover;
-  overflow: hidden;
   position: relative;
   line-height: 1.3;
   height: 100%;
+}
+
+header {
+  margin: 0 auto;
+}
+
+.navbar-collapse {
+  justify-content: flex-end;
 }
 .logo {
     width: 15%;
@@ -39,7 +46,26 @@ body {
     background-image: linear-gradient(320deg, #735704 , #f3c435); 
     color: rgb(255, 255, 255);
 }
+.nav-link {
+  color: rgb(106, 83, 11);
+}
+.active{
+  color: rgb(255, 255, 255);
+  background-image: linear-gradient(160deg, #735704 , #f3c435); 
+  border: none;
+  cursor: pointer;
+}
 
+.nav-link:hover{
+  color: #735704 ;
+}
+.active:hover{
+  background-image: linear-gradient(320deg, #735704 , #f3c435); 
+  color: rgb(255, 255, 255);
+}
+.btn-lg {
+margin: 0;
+}
 
   @media screen and (max-width: 414px) {
     .container-fluid {

@@ -17,16 +17,18 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
     />
-    <link rel="stylesheet" href="css/container.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/story.css" />
     <title>Kuan__HBD</title>
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
           <a class="navbar-brand" href="index.html">
-            <img src="img/beer.svg" alt="" width="30" height="24">
-          </a>          <button
+            <img src="img/beer.svg" alt="" class="logo" />
+          </a>
+          <button
             class="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
@@ -38,19 +40,93 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
-            <nav class="nav nav-pills nav-justified">
-              <a class="nav-link" href="#">ABOUT</a>
-              <a class="nav-link" href="home.html">HOME</a>
-              <a class="nav-link active" aria-current="page" href="story.html"
-                >STORY</a
-              >
+            <nav class="nav">
+              <a class="nav-link" aria-current="page" href="home.html">HOME</a>
+              <a class="nav-link active" href="story.html">STORY</a>
             </nav>
           </div>
         </div>
       </nav>
     </header>
-    <!--bootstrap JS插件-->
+    <main>
+      <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        <strong>您點的雙魚座感性話來了！</strong>欸好好笑😆<br>我突然不知道怎麼開頭🙃🙃🙃
+        <button
+        type="button"
+        class="btn-close"
+        data-bs-dismiss="alert"
+        aria-label="Close"
+        ></button>
+      </div>
+      
+      <div class="card text-center"">
+        <div class="card-body">
+          <h5 class="card-title">讓我來開金口為你獻唱一首唄</h5>
+          <p class="card-text">祝你生日快樂！<br>祝你生日快樂！<br>祝你生日快樂！<br>祝你生日快樂～ </p>
+          <h5>Happy birthday to you,<br>
+            Happy birthday to you,<br>
+            Happy birthday dear <mark>Green Tea</mark>,<br>
+            Happy birthday to you.</h5>
+            <button
+            type="button"
+            class="btn btn-lg"
+            data-bs-toggle="modal"
+            data-bs-target="#staticBackdrop"
+            >
+            揭曉
+          </button>        
+        </div>
+      </div>
+      <img src="img/balloon.png" alt="" class="balloonstory1">
+      <img src="img/balloon.png" alt="" class="balloonstory2">
+      
+    
 
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="staticBackdrop"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+    <div class="modal-dialog modal-dialog-scrollable">
+      <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">
+              <i class="bi bi-exclamation-triangle-fill"></i> 生日快樂🖤🤍💜💙
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            流水帳開始 
+             <br />好啦認真點，蠻意外會在前端班交到朋友<br />（雖然我已經後悔把你們加進摯友名單了，<br />因為這樣我有了25年來沒有的小🐔🐔）
+            <br>更沒想到會變那麼好唄，畢竟第一印象說真的不是太友善<br />但還好我們對彼此的印象都是「兇、不好相處」<br />這件事就相互抵銷，不跟你計較，但加上之前有所誤解<br>（shit！這無法抵銷，我又輸一次）再次向您道歉🙇🏼‍♀️。
+            <br>仔細回想我好像一開始蠻意外你會密我做遊戲這部分<br>讓我心想可能似乎沒這麼難相處吧？不曉得：）<br>在團專認識後果真是我誤會了顆顆：）<br>你是很棒的人，有想法、勇於嘗試自己沒試過的事物、對自己有所堅持✊🏼<br>要有信心相信自己是最棒的也要懂得保護自己在任何事上都是，聽到沒？ 
+            <br>再說一次你剛剛有領獎了 所以你獲得了一項資格<br>不管怎樣，就算之後再忙或是樹林林口內湖距離多遠<br>你一通電話需要我就會過去啦
+            <br>最後生日快樂🎂24歲<br>你的夢想堅持下去一定可以達成的 愛你啦寶貝😊
+          </div>
+          <div class="modal-footer">
+            <button
+            type="button"
+            class="btn btn-primary"
+            data-bs-dismiss="modal"
+          >
+            工作加油：）繼續陪我喝酒呦
+          </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    </main>
+    <!--bootstrap JS插件-->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js"
       integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/"
