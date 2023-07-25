@@ -1,4 +1,5 @@
 main {
+  height: 100vh;
 }
 header {
   margin: 0 auto;
@@ -7,7 +8,6 @@ header {
 .out {
   position: relative;
   overflow: hidden;
-  height: 100vh;
 }
 .navbar-collapse {
   justify-content: flex-end;
@@ -48,12 +48,12 @@ header {
   transform: rotate(32deg);
 }
 
-.text {
-  width: 60%;
-  background-color: #dbdbdb;
-  height: 50%;
+.card {
+  width: 40%;
   margin: 0 auto;
-  margin-top: 80px;
+}
+
+.card-img-top{
 }
 .nav-link {
     color: rgb(106, 83, 11);
@@ -72,6 +72,9 @@ header {
     background-image: linear-gradient(320deg, #735704 , #f3c435); 
     color: rgb(255, 255, 255);
 }
+.btn-lg {
+  margin: 0;
+}
 
 @media screen and (max-width: 414px) {
   section {
@@ -80,34 +83,45 @@ header {
   .balloonBlack {
     position: absolute;
     width: 18vh;
-    top: 58vh;
+    top: 40vh;
     right: -9vw;
   }
   .ballonWhite1 {
     position: absolute;
     width: 19vh;
     left: -11vw;
-    top: 107vw;
+    top: 7vw;
+    z-index: -1;
   }
   .ribbon2 {
     width: 75%;
     position: absolute;
-    top: 60vh;
+    top: 45vh;
     right: -5vw;
     transform: rotate(-11deg);
   }
   .ribbon1 {
     width: 70%;
     position: absolute;
-    top: -5vh;
+    top: -9vh;
     left: 60vw;
-    transform: rotate(185deg);
+    transform: rotate(415deg)
   }
   .ribbon3 {
     width: 70%;
     position: absolute;
-    top: 68vh;
+    top: 40vh;
     left: -37vw;
     transform: rotate(171deg);
+  }
+  .text {
+    margin-top: 40px;
+  }
+
+  .card {
+    width: 80%;
+    margin:  auto;
+    margin-top: 80px
+    ;
   }
 }

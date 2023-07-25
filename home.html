@@ -23,7 +23,7 @@
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg navbar-light ">
+      <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
           <a class="navbar-brand" href="index.html">
             <img src="img/beer.svg" alt="" class="logo" />
@@ -49,10 +49,15 @@
           </div>
         </div>
       </nav>
-      <div class="alert alert-warning alert-dismissible fade show" role="alert">
+      <!-- <div class="alert alert-warning alert-dismissible fade show" role="alert">
         <strong>注意注意</strong> 說真的 我還沒想到這alert要打什麼：）顆顆
-        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-      </div>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="alert"
+          aria-label="Close"
+        ></button>
+      </div> -->
     </header>
     <main>
       <div class="out">
@@ -64,13 +69,79 @@
           <img src="img/ribbon2.png" alt="" class="ribbon3" />
         </div>
 
-        <div class="text">
-          <h1>happy birthday</h1>
-          <p></p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim, culpa
-          praesentium. Voluptatum expedita accusamus excepturi nobis ex labore
-          quisquam recusandae aut natus harum minima, repellendus impedit, sint
-          accusantium. Aliquid, dicta?
+        <div class="card">
+          <div
+            id="carouselExampleSlidesOnly"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/kuan1.JPG" class="d-block w-100" alt="..." />
+              </div>
+              <div class="carousel-item">
+                <img src="img/kuan2.JPG" class="d-block w-100" alt="..." />
+              </div>
+              <div class="carousel-item">
+                <img src="img/kuan3.JPG" class="d-block w-100" alt="..." />
+              </div>
+              <div class="carousel-item">
+                <img src="img/kuan4.JPG" class="d-block w-100" alt="..." />
+              </div>
+            </div>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">💡人生跑馬燈💡</h5>
+            <p class="card-text">
+              這並不是什麼感人的友情回顧<br />這是告訴我們喝酒會如何？<br />Ans:有笑容🫠🫠🫠
+            </p>
+          </div>
+          <button
+            type="button"
+            class="btn btn-lg"
+            data-bs-toggle="modal"
+            data-bs-target="#staticBackdrop"
+          >
+            領獎囉
+          </button>
+
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="staticBackdrop"
+            data-bs-backdrop="static"
+            data-bs-keyboard="false"
+            tabindex="-1"
+            aria-labelledby="staticBackdropLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="staticBackdropLabel">
+                    <i class="bi bi-exclamation-triangle-fill"></i> 恭喜
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  恭喜你！獲頒獎項<br />陳姝羽人生25年來第一位<br />『認識不到半年＿晉級摯友』<br />獎項：奶頭大拇指(。Y。)
+                </div>
+                <div class="modal-footer">
+                  <a class="btn btn-close-white" href="index.html" role="button"
+                    >棄獎而去</a
+                  >
+                  <a class="btn btn-primary" href="home.html" role="button"
+                    >光榮領獎</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </main>
