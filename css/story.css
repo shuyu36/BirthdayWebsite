@@ -3,51 +3,71 @@ body {
     linear-gradient(-10deg, #d0dcf2 70%, transparent 90%);
   background-size: 100% 120%;
   background-size: cover;
-    overflow: hidden;
+  overflow: hidden;
   height: 100vh;
 }
 
-.balloonstory1{
-    height: 50vh;
-    position: absolute;
-    left: 20vh;
-    top: 30vh;
+.balloonstory1 {
+  height: 50vh;
+  position: absolute;
+  left: 20vh;
+  top: 30vh;
 }
 .balloonstory2 {
-    height: 80vh;
-    position: absolute;
-    right: 20vh;
-    top: 30vh;
-    z-index: -3;
+  height: 80vh;
+  position: absolute;
+  right: 20vh;
+  top: 30vh;
+  z-index: -3;
 }
 
 .card {
-    width: 50%;
-    height: 50%;
-    margin: 0 auto;
-    text-align: center; /* 文字居中 */
-  }
+  width: 55%;
+  height: 50%;
+  margin: 0 auto;
+  text-align: center; /* 文字居中 */
+}
+h5 {
+  margin-bottom: 40px;
+}
+.logotea {
+  width: 10%;
+  position: absolute;
+  right: 26%;
+  top: 40%;
+  transform: rotate(32deg);
+}
 
 .container {
-    margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 @media screen and (max-width: 414px) {
   body {
-    background-size:cover,cover;
+    background-size: cover, cover;
   }
-  .balloonstory1{
+  .balloonstory1 {
     height: 50vh;
     position: absolute;
     left: 20vh;
-    top: 30vh;
+    top: 40vh;
     z-index: -3;
-}
-.balloonstory2 {
+  }
+  .balloonstory2 {
     height: 70vh;
     position: absolute;
     left: -25vh;
     top: -10vh;
     z-index: -3;
-}
+  }
+  .card {
+    width: 70%;
+    height: 50%;
+    margin: 0 auto;
+    text-align: center; /* 文字居中 */
+  }
+
+  .logotea {
+    display: none;
+  }
 }
