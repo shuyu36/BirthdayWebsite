@@ -8,7 +8,7 @@ body{
 
 .out {
   position: relative;
-  overflow: hidden;
+  overflow: auto;
 }
 
 .decorate {
@@ -103,5 +103,9 @@ body{
     margin:  auto;
     margin-top: 80px
     ;
+  }
+  .out {
+    position: relative;
+    overflow: hidden;
   }
 }
